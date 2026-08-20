@@ -746,11 +746,6 @@ a:focus {
 }
 
 /* Project-specific additions kept intentionally close to the base template. */
-.project-link-disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-
 .publication-authors .lab-link {
   color: #3f6f8f !important;
 }

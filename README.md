@@ -19,7 +19,6 @@ Then open `http://localhost:8000`.
 
 ## Before publishing
 
-- Add the public code repository URL and enable the Code button in `index.html`.
 - Set the repository's **Settings → Pages → Build and deployment** source to the desired branch and root directory.
 
 ## Assets

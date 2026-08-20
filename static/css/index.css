@@ -414,10 +414,6 @@ code {
   background: #10b981;
 }
 
-.copy-bibtex-btn.copied .copy-text::after {
-  content: "ied!";
-}
-
 /* Scroll to Top Button */
 .scroll-to-top {
   position: fixed;
@@ -755,6 +751,18 @@ a:focus {
   cursor: not-allowed;
 }
 
+.publication-authors .lab-link {
+  color: #3f6f8f !important;
+}
+
+.publication-authors .lab-link::after {
+  background: #3f6f8f;
+}
+
+.publication-authors .lab-link:hover {
+  color: #294f68 !important;
+}
+
 .teaser-image,
 .section-figure {
   display: block;
@@ -786,23 +794,20 @@ a:focus {
   margin-bottom: 0.75rem;
 }
 
-.local-video {
-  height: auto;
-  padding-bottom: 0;
-}
-
-.local-video video {
-  display: block;
-  width: 100%;
-  border-radius: var(--border-radius-lg);
-}
-
 .motion-title {
   margin-top: 3.5rem;
 }
 
 .motion-gallery {
   margin-top: 1rem;
+}
+
+.teaser-motion-gallery {
+  margin-top: 0;
+}
+
+.teaser-motion-gallery video {
+  filter: saturate(1.34) contrast(1.10) brightness(1.025);
 }
 
 .motion-item {
@@ -828,6 +833,17 @@ a:focus {
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
+}
+
+.comparison-row-title {
+  margin: 2rem 0 0.5rem;
+}
+
+.towr-reference {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 
 .result-block {

@@ -5,7 +5,7 @@ Project page for **“Dynamically-Consistent Trajectory Optimization for Legged 
 ## Authors
 
 Sangmin Kim, Hajun Kim, Gijeong Kim, Min-Gyu Kim, and Hae-Won Park<br>
-[DRCD LAB, KAIST](https://www.dynamicrobot.kaist.ac.kr/)
+[Dynamic Robot Control & Design Laboratory (DRCD), KAIST](https://www.dynamicrobot.kaist.ac.kr/)
 
 ## Preview locally
 
@@ -20,14 +20,13 @@ Then open `http://localhost:8000`.
 ## Before publishing
 
 - Add the public code repository URL and enable the Code button in `index.html`.
-- Replace `static/images/favicon.ico` with a project or lab icon.
 - Set the repository's **Settings → Pages → Build and deployment** source to the desired branch and root directory.
 
 ## Assets
 
 The project figures in `static/images/paper/` were exported from the paper source for use on this page. Robot visualizations in the terrain figure were generated with RaiSimUnreal, as noted in the paper.
 
-The embedded four-minute presentation is stored at `static/videos/paper-presentation.mp4`. Web-optimized motion and terrain clips are stored alongside it. The full-resolution source clips and baseline-comparison videos remain in the research media archive.
+The main presentation is embedded from [YouTube](https://www.youtube.com/watch?v=TKBdt3iXaJ4). Web-optimized motion, terrain, and TO/MPC comparison clips are stored under `static/videos/`. Full-resolution source clips remain in the research media archive.
 
 ## Acknowledgment
 

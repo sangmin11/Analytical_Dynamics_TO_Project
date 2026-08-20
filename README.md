@@ -27,7 +27,7 @@ Then open `http://localhost:8000`.
 
 The project figures in `static/images/paper/` were exported from the paper source for use on this page. Robot visualizations in the terrain figure were generated with RaiSimUnreal, as noted in the paper.
 
-The embedded four-minute presentation is stored at `static/videos/paper-presentation.mp4`. Additional full-resolution terrain, motion, and baseline-comparison clips remain in the research media archive and can later be hosted externally if needed.
+The embedded four-minute presentation is stored at `static/videos/paper-presentation.mp4`. Web-optimized motion and terrain clips are stored alongside it. The full-resolution source clips and baseline-comparison videos remain in the research media archive.
 
 ## Acknowledgment
 

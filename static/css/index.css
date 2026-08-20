@@ -797,6 +797,39 @@ a:focus {
   border-radius: var(--border-radius-lg);
 }
 
+.motion-title {
+  margin-top: 3.5rem;
+}
+
+.motion-gallery {
+  margin-top: 1rem;
+}
+
+.motion-item {
+  overflow: hidden;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.motion-item video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1280 / 700;
+  background: #000;
+  object-fit: cover;
+}
+
+.motion-item p {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 .result-block {
   padding: 2.5rem 0;
   border-bottom: 1px solid var(--border-color);

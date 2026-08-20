@@ -19,9 +19,7 @@ Then open `http://localhost:8000`.
 
 ## Before publishing
 
-- Add the final paper PDF under `static/pdfs/` and enable the Paper button in `index.html`.
 - Add the public code repository URL and enable the Code button in `index.html`.
-- Add the final DOI, volume, issue, pages, and URL to the citation metadata and BibTeX.
 - Replace `static/images/favicon.ico` with a project or lab icon.
 - Set the repository's **Settings → Pages → Build and deployment** source to the desired branch and root directory.
 

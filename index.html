@@ -8,7 +8,7 @@
   <meta name="keywords" content="legged robots, trajectory optimization, contact planning, Bézier polynomials, friction cone, quadruped robots">
   <meta name="author" content="Sangmin Kim, Hajun Kim, Gijeong Kim, Min-Gyu Kim, Hae-Won Park">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#10231f">
+  <meta name="theme-color" content="#2563eb">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="DRCD LAB · KAIST">
@@ -31,226 +31,205 @@
   <meta name="citation_author" content="Park, Hae-Won">
   <meta name="citation_publication_date" content="2025">
   <meta name="citation_journal_title" content="IEEE Robotics and Automation Letters">
+  <meta name="citation_volume" content="10">
+  <meta name="citation_issue" content="12">
+  <meta name="citation_firstpage" content="13161">
+  <meta name="citation_lastpage" content="13168">
+  <meta name="citation_doi" content="10.1109/LRA.2025.3628199">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2510.24069">
 
   <title>Dynamically-Consistent Trajectory Optimization for Legged Robots</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "Dynamically-Consistent Trajectory Optimization for Legged Robots via Contact Point Decomposition",
-    "author": [
-      {"@type":"Person","name":"Sangmin Kim"},
-      {"@type":"Person","name":"Hajun Kim"},
-      {"@type":"Person","name":"Gijeong Kim"},
-      {"@type":"Person","name":"Min-Gyu Kim"},
-      {"@type":"Person","name":"Hae-Won Park"}
-    ],
-    "datePublished": "2025",
-    "publisher": {"@type":"Organization","name":"IEEE Robotics and Automation Letters"},
-    "keywords": ["legged robots", "trajectory optimization", "multi-contact motion planning", "optimal control"],
-    "isAccessibleForFree": true
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script defer src="static/js/fontawesome.all.min.js"></script>
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="Go to top"><span class="brand-mark"></span>DCTO</a>
-    <div class="nav-links">
-      <a href="#method">Method</a>
-      <a href="#video">Video</a>
-      <a href="#results">Results</a>
-      <a href="#citation">Citation</a>
-    </div>
-  </nav>
+  <main>
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Dynamically-Consistent Trajectory Optimization for Legged Robots via Contact Point Decomposition</h1>
 
-  <main id="top">
-    <header class="project-hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="container is-max-desktop hero-content">
-        <p class="eyebrow"><span></span>IEEE Robotics and Automation Letters · 2025</p>
-        <h1>Dynamically-Consistent<br>Trajectory Optimization<br><em>for Legged Robots</em></h1>
-        <p class="hero-subtitle">via Contact Point Decomposition</p>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Sangmin Kim,</span>
+                <span class="author-block">Hajun Kim,</span>
+                <span class="author-block">Gijeong Kim,</span>
+                <span class="author-block">Min-Gyu Kim,</span>
+                <span class="author-block">Hae-Won Park</span>
+              </div>
 
-        <div class="authors" aria-label="Paper authors">
-          <span>Sangmin Kim</span><span>Hajun Kim</span><span>Gijeong Kim</span><span>Min-Gyu Kim</span><span>Hae-Won Park</span>
-        </div>
-        <p class="affiliation"><a href="https://www.dynamicrobot.kaist.ac.kr/" target="_blank" rel="noopener">DRCD LAB · KAIST</a></p>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="https://www.dynamicrobot.kaist.ac.kr/" target="_blank" rel="noopener">DRCD LAB, KAIST</a></span><br>
+                <span class="author-block publication-venue">IEEE Robotics and Automation Letters, 10(12), 13161–13168, 2025</span>
+              </div>
 
-        <div class="project-links">
-          <a class="project-button is-disabled" aria-disabled="true" title="Add the final paper PDF to enable this link"><i class="fas fa-file-pdf"></i> Paper <small>coming soon</small></a>
-          <a class="project-button is-disabled" aria-disabled="true" title="Add the public code repository URL to enable this link"><i class="fab fa-github"></i> Code <small>coming soon</small></a>
-          <a class="project-button" href="#citation"><i class="fas fa-quote-right"></i> Cite</a>
-        </div>
-
-        <div class="hero-figure">
-          <img src="static/images/paper/terrain-results.png" alt="Quadruped motions generated on plane, block, stairs, and inclined chimney terrains">
-          <div class="terrain-tags" aria-hidden="true"><span>Plane</span><span>Block · 0.5 m</span><span>Stairs</span><span>Chimney · 45°</span></div>
-        </div>
-        <p class="hero-caption">One optimization framework. Diverse contact sequences. Reliable motion across challenging terrain.</p>
-      </div>
-    </header>
-
-    <section class="section intro-section">
-      <div class="container is-max-desktop">
-        <div class="section-label">The challenge</div>
-        <div class="intro-grid">
-          <h2>Feasible at nodes<br>does not mean<br><em>feasible in between.</em></h2>
-          <div class="intro-copy">
-            <p>Phase-based trajectory optimization can discover versatile gait sequences over long horizons. Yet enforcing dynamics and contact constraints only at discrete nodes leaves the motion between those nodes unconstrained—exactly where short contact phases can fail.</p>
-            <p>We restructure the problem so that translational dynamics and friction-cone conditions hold continuously across the trajectory, producing reference motions that controllers can track more reliably.</p>
-          </div>
-        </div>
-
-        <div class="metric-row" aria-label="Key results">
-          <div class="metric"><strong>0</strong><span>translational dynamics<br>violation in our formulation</span></div>
-          <div class="metric"><strong>≈0</strong><span>friction-cone violation<br>up to numerical precision</span></div>
-          <div class="metric"><strong>4</strong><span>terrain families<br>evaluated</span></div>
-          <div class="metric"><strong>50</strong><span>randomized tracking<br>simulations</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section method-section" id="method">
-      <div class="container is-max-desktop">
-        <div class="section-label light">Our approach</div>
-        <div class="section-heading light-heading">
-          <h2>Decompose. Parameterize.<br><em>Guarantee.</em></h2>
-          <p>We turn a coupled contact problem into a structured formulation whose geometry enforces the physics.</p>
-        </div>
-
-        <figure class="method-figure">
-          <img src="static/images/paper/method-overview.png" alt="Overview of contact point decomposition, phase-based trajectory optimization, and trajectory recombination">
-          <figcaption>Method overview: each contact point is optimized over its own phase sequence, then recombined into a dynamically consistent whole-body trajectory.</figcaption>
-        </figure>
-
-        <div class="contribution-grid">
-          <article>
-            <span class="step-number">01</span>
-            <h3>Contact point decomposition</h3>
-            <p>Using the superposition property of linear translational dynamics, we separate the influence of each contact force into independent multiple-phase problems.</p>
-          </article>
-          <article>
-            <span class="step-number">02</span>
-            <h3>Analytical dynamics</h3>
-            <p>Bézier differentiation matrices create an analytical relationship between robot position and contact force, satisfying translational dynamics throughout every phase.</p>
-          </article>
-          <article>
-            <span class="step-number">03</span>
-            <h3>Convex-hull feasibility</h3>
-            <p>Constraining force control points inside the friction pyramid keeps the complete Bézier force curve inside it—not just a sparse set of samples.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section video-section" id="video">
-      <div class="container is-max-desktop">
-        <div class="section-label">Presentation</div>
-        <div class="section-heading">
-          <h2>The complete method,<br><em>in four minutes.</em></h2>
-          <p>From the limitations of node-based constraints to contact point decomposition, continuous feasibility, and tracking validation.</p>
-        </div>
-        <div class="video-frame">
-          <video controls preload="metadata" playsinline>
-            <source src="static/videos/paper-presentation.mp4" type="video/mp4">
-            Your browser does not support embedded MP4 video.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <section class="section results-section" id="results">
-      <div class="container is-max-desktop">
-        <div class="section-label">Evaluation</div>
-        <div class="section-heading">
-          <h2>Consistency that holds<br><em>between the dots.</em></h2>
-          <p>Compared with a collocation baseline, our trajectories preserve physical feasibility throughout time and improve downstream tracking.</p>
-        </div>
-
-        <div class="result-card">
-          <div class="result-copy">
-            <span class="result-index">01 / Dynamics</span>
-            <h3>Force and motion agree across the entire trajectory.</h3>
-            <p>Analytical integration makes the gravity-compensated linear momentum derivative match the total ground-reaction force continuously. The baseline only matches at constrained nodes and misses behavior between them.</p>
-            <div class="result-stat"><strong>0 N</strong><span>translational dynamics violation<br>across every evaluated terrain</span></div>
-          </div>
-          <figure><img src="static/images/paper/dynamics-feasibility.png" alt="Comparison of translational dynamics feasibility for the proposed method and baseline"><figcaption>Total GRF and gravity-compensated momentum derivative along the z-axis.</figcaption></figure>
-        </div>
-
-        <div class="result-card reverse">
-          <div class="result-copy">
-            <span class="result-index">02 / Contact</span>
-            <h3>Every force stays inside the friction cone.</h3>
-            <p>The convex-hull property of Bézier curves turns a finite set of control-point constraints into continuous-time friction feasibility. Interval-based enforcement can leave the cone between samples.</p>
-            <div class="result-stat"><strong>≈0 N</strong><span>friction-cone violation<br>up to numerical error</span></div>
-          </div>
-          <figure><img src="static/images/paper/friction-feasibility.png" alt="Ground reaction force profiles compared against the friction pyramid"><figcaption>Ground-reaction force profile for the front-right leg.</figcaption></figure>
-        </div>
-
-        <div class="tracking-panel">
-          <div>
-            <span class="result-index">03 / Tracking</span>
-            <h3>More feasible references are easier to track.</h3>
-            <p>An MPC tracked trajectories from both methods over 50 randomized simulations. Our references reduced mean errors in every position and orientation axis.</p>
-          </div>
-          <div class="tracking-bars" aria-label="Mean tracking error comparison">
-            <div class="bar-group"><div class="bar-label"><span>Position X</span><span>0.132 m vs 0.165 m</span></div><div class="bar"><i style="width:80%"></i><b style="width:100%"></b></div></div>
-            <div class="bar-group"><div class="bar-label"><span>Position Z</span><span>0.016 m vs 0.024 m</span></div><div class="bar"><i style="width:67%"></i><b style="width:100%"></b></div></div>
-            <div class="bar-group"><div class="bar-label"><span>Orientation X</span><span>0.061 rad vs 0.104 rad</span></div><div class="bar"><i style="width:59%"></i><b style="width:100%"></b></div></div>
-            <div class="bar-legend"><span><i></i>Ours</span><span><b></b>Baseline</span></div>
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2510.24069" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span></a>
+                </span>
+                <span class="link-block">
+                  <span class="button is-normal is-rounded is-dark is-static project-link-disabled"><span class="icon"><i class="fab fa-github"></i></span><span>Code</span></span>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2510.24069" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-alt"></i></span><span>arXiv</span></a>
+                </span>
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/11224016" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-external-link-alt"></i></span><span>IEEE</span></a>
+                </span>
+                <span class="link-block">
+                  <a href="#BibTeX" class="button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-quote-right"></i></span><span>BibTeX</span></a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section citation-section" id="citation">
-      <div class="container is-max-desktop citation-grid">
-        <div>
-          <div class="section-label light">Reference</div>
-          <h2>Cite this work</h2>
-          <p>The final volume, issue, page range, DOI, and public paper URL can be added once available.</p>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img class="teaser-image" src="static/images/paper/terrain-results.png" alt="Quadruped motions generated on plane, block, stairs, and inclined chimney terrains">
+          <h2 class="subtitle has-text-centered teaser-caption">Our framework generates dynamically consistent motions across flat ground, a 0.5 m block, stairs, and 45° inclined walls.</h2>
         </div>
-        <div class="bibtex-wrap">
-          <button class="copy-button" type="button" onclick="copyBibTeX(this)"><i class="far fa-copy"></i><span>Copy BibTeX</span></button>
-          <pre id="bibtex"><code>@article{kim2025dynamically,
-  title   = {Dynamically-Consistent Trajectory Optimization
-             for Legged Robots via Contact Point Decomposition},
-  author  = {Kim, Sangmin and Kim, Hajun and Kim, Gijeong and
-             Kim, Min-Gyu and Park, Hae-Won},
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>To generate reliable motion for legged robots through trajectory optimization, it is crucial to compute the robot path and contact sequence while accurately considering dynamics. We present a phase-based trajectory optimization framework that ensures translational dynamics and friction-cone feasibility throughout the entire trajectory. The method decomposes translational dynamics for each contact point using the superposition property of linear differential equations, derives an analytical relationship between robot position and force using Bézier differentiation matrices, and exploits the convex-hull property of Bézier polynomials to satisfy friction-cone constraints. We validate the framework with a quadruped model across multiple terrains and gait sequences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <div class="content has-text-justified">
+          <img class="section-figure method-image" src="static/images/paper/method-overview.png" alt="Overview of contact point decomposition and phase-based trajectory optimization">
+          <p class="figure-caption">Each contact point is optimized over its own stance and swing phases, then recombined into a whole-body trajectory.</p>
+          <ul class="contribution-list">
+            <li><strong>Contact point decomposition.</strong> The effects of individual contact forces are separated into multiple-phase problems using the superposition property of translational dynamics.</li>
+            <li><strong>Analytical dynamics.</strong> Bézier differentiation matrices relate robot position and contact force analytically, satisfying translational dynamics throughout each phase.</li>
+            <li><strong>Continuous friction feasibility.</strong> Constraining Bézier control points inside the friction pyramid keeps the complete force profile inside it.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Video</h2>
+          <div class="publication-video local-video">
+            <video controls preload="metadata" playsinline>
+              <source src="static/videos/paper-presentation.mp4" type="video/mp4">
+              Your browser does not support embedded MP4 video.
+            </video>
+          </div>
+          <p class="figure-caption">Four-minute overview of the motivation, formulation, and experimental validation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+
+        <div class="result-block columns is-vcentered">
+          <div class="column is-5 content">
+            <h3 class="title is-4">Translational dynamics</h3>
+            <p>Analytical integration makes the gravity-compensated linear momentum derivative match the total ground-reaction force continuously. The proposed formulation yields zero translational-dynamics violation across the evaluated terrains.</p>
+          </div>
+          <div class="column is-7">
+            <img class="section-figure" src="static/images/paper/dynamics-feasibility.png" alt="Comparison of translational dynamics feasibility for the proposed method and baseline">
+          </div>
+        </div>
+
+        <div class="result-block columns is-vcentered">
+          <div class="column is-7">
+            <img class="section-figure" src="static/images/paper/friction-feasibility.png" alt="Ground reaction force profiles compared against the friction pyramid">
+          </div>
+          <div class="column is-5 content">
+            <h3 class="title is-4">Friction-cone feasibility</h3>
+            <p>The convex-hull property turns finite control-point constraints into continuous-time friction feasibility. Friction-cone violation remains near zero, up to numerical precision.</p>
+          </div>
+        </div>
+
+        <div class="content tracking-summary">
+          <h3 class="title is-4 has-text-centered">Trajectory tracking</h3>
+          <p>Across 50 randomized MPC simulations, trajectories generated by our method reduced the mean tracking error in every position and orientation axis compared with the baseline.</p>
+          <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth has-text-centered">
+              <thead><tr><th>Metric</th><th>Ours</th><th>Baseline</th></tr></thead>
+              <tbody>
+                <tr><td>Position X</td><td><strong>0.132 m</strong></td><td>0.165 m</td></tr>
+                <tr><td>Position Z</td><td><strong>0.016 m</strong></td><td>0.024 m</td></tr>
+                <tr><td>Orientation X</td><td><strong>0.061 rad</strong></td><td>0.104 rad</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title is-3">BibTeX</h2>
+          <button class="copy-bibtex-btn" type="button" onclick="copyBibTeX()"><i class="fas fa-copy"></i><span class="copy-text">Copy</span></button>
+        </div>
+        <pre id="bibtex-code"><code>@article{kim2025dynamically,
+  title   = {Dynamically-Consistent Trajectory Optimization for Legged Robots via Contact Point Decomposition},
+  author  = {Kim, Sangmin and Kim, Hajun and Kim, Gijeong and Kim, Min-Gyu and Park, Hae-Won},
   journal = {IEEE Robotics and Automation Letters},
-  year    = {2025}
+  year    = {2025},
+  volume  = {10},
+  number  = {12},
+  pages   = {13161--13168},
+  doi     = {10.1109/LRA.2025.3628199}
 }</code></pre>
-        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container is-max-desktop footer-inner">
-      <p><a href="https://www.dynamicrobot.kaist.ac.kr/" target="_blank" rel="noopener">DRCD LAB · KAIST</a></p>
-      <p>Page based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8 content has-text-centered">
+          <p><a href="https://www.dynamicrobot.kaist.ac.kr/" target="_blank" rel="noopener">DRCD LAB, KAIST</a></p>
+          <p>This page is based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>.</p>
+        </div>
+      </div>
     </div>
   </footer>
 
   <script>
-    async function copyBibTeX(button) {
-      const text = document.querySelector('#bibtex code').innerText;
+    async function copyBibTeX() {
+      const text = document.querySelector('#bibtex-code code').innerText;
+      const label = document.querySelector('.copy-text');
       try {
         await navigator.clipboard.writeText(text);
-        button.querySelector('span').textContent = 'Copied!';
-        setTimeout(() => button.querySelector('span').textContent = 'Copy BibTeX', 1800);
+        label.textContent = 'Copied!';
+        setTimeout(() => label.textContent = 'Copy', 1800);
       } catch (error) {
         const range = document.createRange();
-        range.selectNode(document.querySelector('#bibtex code'));
+        range.selectNode(document.querySelector('#bibtex-code code'));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
       }

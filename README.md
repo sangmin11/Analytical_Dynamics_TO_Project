@@ -5,7 +5,7 @@ Project page for **“Dynamically-Consistent Trajectory Optimization for Legged 
 ## Authors
 
 Sangmin Kim, Hajun Kim, Gijeong Kim, Min-Gyu Kim, and Hae-Won Park<br>
-Humanoid Robot Research Center, KAIST
+[DRCD LAB, KAIST](https://www.dynamicrobot.kaist.ac.kr/)
 
 ## Preview locally
 
